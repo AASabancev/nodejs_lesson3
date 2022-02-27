@@ -4,7 +4,7 @@ section.form
       .status= msgemail
     .form__subtitle.subtitle Контактные данные
     h2.form__title.title Пишите, пообщаемся
-    form(action="/" method="POST").form-email
+    form(action="/" method="POST").form-email.j-form-email
       .form-email__line
         label.form-email__label(for="") Имя *
         input.form-email__input(type="text" name="name")
@@ -14,6 +14,6 @@ section.form
       .form-email__line
         label.form-email__label(for="") Сообщение
         textarea(name="message").form-email__textarea
+      div.j-form-status.form__err
       .form-email__line
         button(type="submit").form-email__button.button Отправить
-    

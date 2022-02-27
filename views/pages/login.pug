@@ -12,8 +12,9 @@ block content
               li.social__item
                 a.social__link(href="http://")
                   i(class=`fab ${item}`)
-
       form(action="/login" method="POST").form-login
+        if (err)
+          div.form__err=err
         if (msglogin)
           .status= msglogin
         .form-login__line
